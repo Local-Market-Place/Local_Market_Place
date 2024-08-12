@@ -19,7 +19,7 @@ namespace Local_Market_Place_001.Models
         public string MobileNo { get; set; }
 
         [Required(ErrorMessage = "Password is required")]
-        [StringLength(100, MinimumLength = 3, ErrorMessage = "Password must be between 6 and 100 characters")]
+        [StringLength(100, MinimumLength = 3, ErrorMessage = "Password must be between 3 and 100 characters")]
         public string Password { get; set; }
 
 
