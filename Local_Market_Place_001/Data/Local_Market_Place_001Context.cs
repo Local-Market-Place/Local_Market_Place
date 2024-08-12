@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Loacal_Market_Place.Models;
+using Local_Market_Place_001.Models;
 
 namespace Local_Market_Place_001.Data
 {
@@ -15,5 +16,6 @@ namespace Local_Market_Place_001.Data
         }
 
         public DbSet<Loacal_Market_Place.Models.RegisterService> RegisterService { get; set; } = default!;
+        public DbSet<Local_Market_Place_001.Models.RegisterShop> RegisterShop { get; set; } = default!;
     }
 }
