@@ -1,0 +1,6 @@
+@Local_Market_Place_001_HostAddress = http://localhost:5005
+
+GET {{Local_Market_Place_001_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
