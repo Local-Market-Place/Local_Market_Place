@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
+using Microsoft.EntityFrameworkCore;
 
 namespace Local_Market_Place_001.Models
 {
@@ -19,11 +20,9 @@ namespace Local_Market_Place_001.Models
 
         [Required(ErrorMessage = "Password is required")]
         [StringLength(100, MinimumLength = 3, ErrorMessage = "Password must be between 6 and 100 characters")]
-
         public string Password { get; set; }
 
 
-        [DefaultValue("ShreeRam Shop")]
         [Required(ErrorMessage = "Shop name is required.")]
         [StringLength(100, ErrorMessage = "Shop name cannot be longer than 100 characters.")]
         public string ShopName { get; set; }
@@ -41,11 +40,6 @@ namespace Local_Market_Place_001.Models
         [DefaultValue("Unknown")]
         [Required(ErrorMessage = "City is required.")]
         public string City { get; set; }
-
-        [DefaultValue("Unknown")]
-        [Required(ErrorMessage = "State is required.")]
-        public string State { get; set; }
-
 
         [Required(ErrorMessage = "Pin/Zip Code is required.")]
         [RegularExpression(@"^\d{6}$", ErrorMessage = "Invalid Pin/Zip Code.")]
