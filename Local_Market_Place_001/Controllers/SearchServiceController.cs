@@ -26,5 +26,36 @@ namespace Local_Market_Place_001.Controllers
             var data = await contexts.RegisterService.ToListAsync();
             return Ok(data);
         }
+
+
+
+        [HttpGet("{Name}")]
+        public async Task<ActionResult<RegisterService>> GetbyNamRegisterService(String Name)
+        {
+            IQueryable<RegisterService> query = contexts.RegisterService;
+            if (!string.IsNullOrEmpty(Name))
+            {
+                query = query.Where(e => e.ServiceName.Contains(Name));
+            }
+
+            var data = await query.ToListAsync();
+            return Ok(data);
+
+        }
+
+
+        [HttpGet("location/{location}")]
+        public async Task<ActionResult<IEnumerable<RegisterService>>> GetShopsByLocation(string location)
+        {
+            IQueryable<RegisterService> query = contexts.RegisterService;
+
+            if (!string.IsNullOrEmpty(location))
+            {
+                query = query.Where(e => e.PinCode.Contains(location));
+            }
+
+            var data = await query.ToListAsync();
+            return Ok(data);
+        }
     }
 }

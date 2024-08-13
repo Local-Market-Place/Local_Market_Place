@@ -17,5 +17,17 @@ namespace Local_Market_Place_001.Data
 
         public DbSet<Loacal_Market_Place.Models.RegisterService> RegisterService { get; set; } = default!;
         public DbSet<Local_Market_Place_001.Models.RegisterShop> RegisterShop { get; set; } = default!;
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // Configure unique constraint for AadharNo
+            modelBuilder.Entity<RegisterShopInfo>()
+                .HasIndex(r => r.AadharNo)
+                .IsUnique();
+        }
+        public DbSet<Local_Market_Place_001.Models.RegisterShopInfo> RegisterShopInfo { get; set; } = default!;
+
     }
 }
