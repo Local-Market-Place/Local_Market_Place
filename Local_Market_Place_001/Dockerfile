@@ -20,5 +20,5 @@ COPY --from=build /app/out ./
 EXPOSE 80
 
 
-ENTRYPOINT ["dotnet", "Local_Market_Place_001.dll"]
+ENTRYPOINT ["dotnet" "Local_Market_Place_001.dll"]
 
