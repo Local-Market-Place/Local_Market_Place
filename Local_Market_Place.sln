@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Local_Market_Place.Server",
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "local_market_place.client", "Local_Market_Place\local_market_place.client\local_market_place.client.esproj", "{D2B6A586-71E0-48B4-ACFE-D6200FD2810E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Local_Market_Place_001", "Local_Market_Place_001\Local_Market_Place_001.csproj", "{973C01DA-A8A7-4085-88F6-351B0CE1A283}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Local_Market_Place_001", "Local_Market_Place_001\Local_Market_Place_001.csproj", "{973C01DA-A8A7-4085-88F6-351B0CE1A283}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

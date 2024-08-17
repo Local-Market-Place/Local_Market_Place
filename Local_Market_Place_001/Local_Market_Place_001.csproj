@@ -8,14 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Dockerfile" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Dockerfile" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Amazon.Lambda.AspNetCoreServer" Version="9.0.0" />
     <PackageReference Include="Amazon.Lambda.AspNetCoreServer.Hosting" Version="1.7.0" />
     <PackageReference Include="Microsoft.AspNet.Cors" Version="5.3.0" />
