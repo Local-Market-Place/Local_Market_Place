@@ -8,11 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Dockerfile" />
+    <None Remove="Dockerfile.txt" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="Dockerfile" />
+    <Compile Include="Dockerfile.txt" />
   </ItemGroup>
 
   <ItemGroup>
