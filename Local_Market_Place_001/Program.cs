@@ -27,6 +27,8 @@ namespace Local_Market_Place_001
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.AddAWSLambdaHosting(LambdaEventSource.RestApi);
+     
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -36,6 +38,7 @@ namespace Local_Market_Place_001
                 app.UseSwaggerUI();
             }
 
+           
             app.UseHttpsRedirection();
 
             app.UseAuthorization();

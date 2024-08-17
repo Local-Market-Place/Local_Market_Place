@@ -19,7 +19,7 @@ namespace Local_Market_Place_001.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<RegisterShop>>> Get()
+        public async Task<ActionResult<List< RegisterShop >>> Get()
         {
             var data = await context.RegisterShop.ToListAsync();
             return Ok(data);
@@ -27,9 +27,9 @@ namespace Local_Market_Place_001.Controllers
 
 
         [HttpGet("{Name}")]
-        public  async Task<ActionResult<RegisterShop>> GetbyName(String Name)
+        public  async Task<ActionResult< RegisterShop >> GetbyName(String Name)
         {
-            IQueryable<RegisterShop> query = context.RegisterShop;
+            IQueryable< RegisterShop > query = context. RegisterShop ;
             if (!string.IsNullOrEmpty(Name))
             {
                 query = query.Where(e => e.ShopName.Contains(Name));
@@ -40,9 +40,9 @@ namespace Local_Market_Place_001.Controllers
 
         }
         [HttpGet("location/{location}")]
-        public async Task<ActionResult<IEnumerable<RegisterShop>>> GetShopsByLocation(string location)
+        public async Task<ActionResult<IEnumerable< RegisterShop >>> GetShopsByLocation(string location)
         {
-            IQueryable<RegisterShop> query = context.RegisterShop;
+            IQueryable< RegisterShop > query = context. RegisterShop ;
 
             if (!string.IsNullOrEmpty(location))
             {
@@ -55,9 +55,9 @@ namespace Local_Market_Place_001.Controllers
 
         [HttpGet("shopCategory/{shopCategory}")]
        
-        public async Task<ActionResult<RegisterShop>> GetbyshopCategory(String shopCategory)
+        public async Task<ActionResult< RegisterShop >> GetbyshopCategory(String shopCategory)
         {
-            IQueryable<RegisterShop> query = context.RegisterShop;
+            IQueryable< RegisterShop > query = context. RegisterShop ;
 
             if (!string.IsNullOrEmpty(shopCategory))
             {

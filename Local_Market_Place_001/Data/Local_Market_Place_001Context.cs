@@ -28,6 +28,9 @@ namespace Local_Market_Place_001.Data
                 .IsUnique();
         }
         public DbSet<Local_Market_Place_001.Models.RegisterShopInfo> RegisterShopInfo { get; set; } = default!;
+        public DbSet<Local_Market_Place_001.Models.RegisterProduct> RegisterProduct { get; set; } = default!;
+        public DbSet<Local_Market_Place_001.Models.ShopServiceLogin> ShopServiceLogin { get; set; } = default!;
+        public DbSet<Local_Market_Place_001.Models.UserLogin> UserLogin { get; set; } = default!;
 
     }
 }

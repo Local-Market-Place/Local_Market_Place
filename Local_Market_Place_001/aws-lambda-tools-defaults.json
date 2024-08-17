@@ -1,0 +1,21 @@
+
+{
+    "region" : "ap-south-1",
+    "profile" : "RushikeshB",
+    "configuration" : "Release",
+    "framework"     : "net8.0",
+    "function-name" : "Local_Market_Place_001",
+    "package-type"  : "Zip",
+    "function-handler" : "Local_Market_Place_001",
+    "function-memory-size" : 256,
+    "function-role"        : "arn:aws:iam::471112559628:role/lambda_exec_Local_Market_Place_001",
+    "function-timeout"     : 10,
+    "function-runtime"     : "dotnet8",
+    "function-architecture" : "x86_64",
+    "function-subnets"      : "",
+    "function-security-groups" : "",
+    "tracing-mode"             : "PassThrough",
+    "environment-variables"    : "",
+    "image-tag"                : "",
+    "function-description"     : ""
+}

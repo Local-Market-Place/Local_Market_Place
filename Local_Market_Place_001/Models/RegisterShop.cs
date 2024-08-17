@@ -33,7 +33,7 @@ namespace Local_Market_Place_001.Models
         public string Address { get; set; }
        
         [DefaultValue("9:00 AM - 11:00 PM")]
-        public string ? ShopTimings { get; set; } = "9:00 AM - 9:00 PM"; // Default value
+        public string ShopTimings { get; set; } = "9:00 AM - 9:00 PM"; // Default value
 
         [Required(ErrorMessage = "Shop category is required.")]
         public string ShopCategory { get; set; }
@@ -48,13 +48,13 @@ namespace Local_Market_Place_001.Models
 
         [DefaultValue("R@gmail.com")]
         [EmailAddress(ErrorMessage = "Invalid Email Address")]
-        public string? Email { get; set; }
+        public string Email { get; set; }
 
         [StringLength(250, ErrorMessage = "Description cannot exceed 250 characters.")]
-        public string? Description { get; set; }
+        public string Description { get; set; }
 
         [StringLength(100, ErrorMessage = "Whatups No cannot exceed 100 characters.")]
-        public string? WhatupsNo { get; set; }
+        public string WhatupsNo { get; set; }
 
         [DefaultValue("Unknown")]
         [Required(ErrorMessage = "Owner name is required.")]

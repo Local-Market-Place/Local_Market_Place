@@ -3,6 +3,7 @@ using Local_Market_Place_001.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Local_Market_Place_001.Migrations
 {
     [DbContext(typeof(Local_Market_Place_001Context))]
-    partial class Local_Market_Place_001ContextModelSnapshot : ModelSnapshot
+    [Migration("20240813153717_add3table")]
+    partial class add3table
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
